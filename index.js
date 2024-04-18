@@ -33,14 +33,13 @@ theme.addEventListener("click", ()=>{
 
 
 //menu button animate
+menuClick();
 function menuClick(){
     const menuBar = document.querySelector(".menu-bar");
     menuBar.addEventListener("click", function(){
-        const dropdown = document.getElementById("dropdown-menu");
+        const dropdown = document.querySelector(".dropdown-menu");
         menuBar.classList.toggle("change");
         dropdown.classList.toggle("visible");
     })
 
-}
-menuClick();
-
+};

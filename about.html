@@ -9,6 +9,35 @@
 </head>
 <body>
     <div class="container">
+        <div class="dropdown-menu">
+            <ul class="list">
+                <li><a href="index.html">Home</a></li><hr>
+                <li><a href="about.html">About</a></li><hr>  <!---navigation links-->
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!---home section-->
+    <section class="home">
+        <div class="navbar">
+            <div class="light-theme"><!---change light mode button-->
+                <div class="circle1">
+                    <div class="circle2"></div>
+                </div>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <div class="menu-bar" onclick="menuClick();">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div> <!---hamburger menu bar for smaller devices-->
+                    <div class="bar bar3"></div>
+                </div>
+            </ul>
+        </div>
+    </section>
 <!---about section-->
 <div id="about">
     <div class='about-title'>
@@ -40,7 +69,6 @@
 </div>
     </div>
     <script src="index.js"></script><!----javasscript  link-->
-    
 </body>
 </html>
 

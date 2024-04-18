@@ -43,6 +43,7 @@ button:hover{
 
 .container{
     background-color: black;
+    height: 100vh;
 }
 
 
@@ -58,7 +59,7 @@ button:hover{
     font-size: 35px;
 }
 
-#dropdown-menu{
+.dropdown-menu{
     /***drop down menu for smaller devices****/
     position: fixed;
     right: 30px;
@@ -74,13 +75,13 @@ button:hover{
     opacity:1 !important;
 }
 
-#dropdown-menu ul{
+.dropdown-menu ul{
     text-align: center;
     background-color: rgb(11, 39, 50);
 }
 
 
-#dropdown-menu li a{
+.dropdown-menu li a{
     font-weight: 500;
     font-size: 30px;
     color: #2dc7ff;
@@ -90,11 +91,11 @@ button:hover{
 }
 
 
-#dropdown-menu li a:hover{
+.dropdown-menu li a:hover{
     color: white;
 }
 
-#dropdown-menu li{
+.dropdown-menu li{
     list-style: none;
 }
 .caret-down{
@@ -267,6 +268,7 @@ button:hover{
     5px 3px 1px skyblue;
 }
 .about-grid{
+    background-color: black;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;   
@@ -434,7 +436,7 @@ input:hover, textarea:hover{
 /****media queries****/
 
 @media(min-width: 761px){
-    #dropdown-menu{
+    .dropdown-menu{
         display: none;
     }
 }
@@ -466,16 +468,9 @@ input:hover, textarea:hover{
 
 
 
-
-@media(max-width: 431px){
-    #home{
-    }
-
-   
-}
 @media (max-width:281px) {         /***galaxy fold device****/
 
-    #home{
+    .home{
         height: 100vh;
     }
 }
@@ -653,7 +648,7 @@ input:hover, textarea:hover{
 
 
 
-.animate #home>div{
+.animate .home>div{
     animation: slideIn 4s;
     transition: all ease-in-out;
     -webkit-animation: slideIn 4s;
